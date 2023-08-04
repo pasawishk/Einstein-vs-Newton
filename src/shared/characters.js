@@ -1,8 +1,10 @@
+
+
 export const playerStats = {
     level: 44,
     maxHealth: 177,
     name: 'Albert',
-    img: '/assets/a1.png',
+    img: '/assets/a1.jpg',
   
     magic: 32,
     attack: 50,
@@ -13,7 +15,7 @@ export const playerStats = {
     level: 44,
     name: 'Devil Albert',
     maxHealth: 188,
-    img: '/assets/a2.png',
+    img: '/assets/a2.jpg',
   
     magic: 50,
     attack: 32,
