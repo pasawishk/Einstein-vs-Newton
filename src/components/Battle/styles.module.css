@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+img {
+  width: 300px; 
+  height: 300px;
+}
+
 .user,
 .opponent {
   gap: 10px;
@@ -17,11 +22,11 @@
 }
 .hudChild {
   flex: 1;
-  height: 200px;
+  height: 100px;
 }
 .gameHeader {
-  font-size: 48px;
-  color: #fdac00;
+  font-size: 20px;
+  color: white;
   text-shadow: 0px 0px 5px #7f0000;
   font-family: 'Press Start 2P', cursive;
 }
@@ -46,7 +51,7 @@
 }
 
 .characters .gameImages img {
-  max-height: 25vh;
+  max-height: 300vh;
   min-height: 150px;
 }
 

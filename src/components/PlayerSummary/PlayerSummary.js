@@ -1,20 +1,20 @@
 import styles from './styles.module.css';
 import {Bar} from '../Bar/Bar.js';
 
-const red ='#821200';
-const blue ='#1953cb'
+const black = "black";
 
 export const PlayerSummary = ({main = false,
     name,
+    iq,
     level,
     health,
     maxHealth}) => {
     return (
     <div 
-    style={{backgroundColor: main? red:blue}} className={styles.main}>
+    style={{backgroundColor: main? black:black}} className={styles.main}>
         <div className={styles.info}>
             <div className={styles.name}>{name}</div>
-            <div className={styles.level}>LVL:{level}</div>
+            <div className={styles.level}>IQ:{iq}</div>
         </div>
             <div className={styles.health}>
                 <Bar label="Hp" value={health} maxValue={maxHealth}/>
