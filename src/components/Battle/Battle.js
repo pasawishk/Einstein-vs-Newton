@@ -20,7 +20,7 @@ export const Battle = () => {
             level={opponentStats.level}
             maxHealth={opponentStats.maxHealth}
             />
-            </div> 
+            </div>
         </div>
         <div className={styles.user}>
             <div className={styles.summary}>
@@ -34,7 +34,7 @@ export const Battle = () => {
             </div>
         </div>
         <div className={styles.hudChild}>
-            <BattleMenu 
+            <BattleMenu
             onAttack={() => console.log('Attack!')}
             onMagic ={() => console.log('Magic')}
             onHeal ={() => console.log('heal')}/>
