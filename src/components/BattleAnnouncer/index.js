@@ -1,1 +1,1 @@
-export * from './BattleAnouncer';
+export * from './BattleAnnouncer';

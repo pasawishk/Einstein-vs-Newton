@@ -4,12 +4,14 @@ import styles from './styles.module.css';
 import { opponentStats } from 'shared/characters.js';
 import { playerStats } from 'shared/characters.js';
 import { BattleMenu } from 'components/BattleMenu/BattleMenu.js';
+import { BattleAnnouncer } from 'components/BattleAnnouncer/BattleAnnouncer.js';
 
 
 export const Battle = () => {
 
     const[opponentHealth,setOpponentHealth] = useState(opponentStats.maxHealth);
     const[playerHealth,setPlayerHealth] = useState(playerStats.maxHealth);
+    const[announcerMessage,setAnnouncerMessage] = useState('');
     return (
     <>
         <div className={styles.opponent}>
@@ -57,6 +59,11 @@ export const Battle = () => {
             </div>
             
             <div className={styles.hud}>
+
+                <div className={styles.hudChild}>
+                    <BattleAnnouncer
+                    message={ announcerMessage || `What will ${playerStats.name} do?`}/>
+                </div>
             <div className={styles.hudChild}>
             <BattleMenu
             onAttack={() => console.log('Attack!')}
