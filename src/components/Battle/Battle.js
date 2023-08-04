@@ -11,8 +11,8 @@ export const Battle = () => {
     const[opponentHealth,setOpponentHealth] = useState(opponentStats.maxHealth);
     const[playerHealth,setPlayerHealth] = useState(playerStats.maxHealth);
     return (
-    <div className={styles.main}>
-        <div className={styles.oponent}>
+    <>
+        <div className={styles.opponent}>
            <div className={styles.summary}>
             <PlayerSummary
             health = {opponentHealth}
@@ -22,6 +22,29 @@ export const Battle = () => {
             />
             </div>
         </div>
+
+        <div className={styles.characters}>
+            <div className={styles.gameHeader}>
+                {playerStats.name} vs {opponentStats.name}
+            </div>
+        </div>
+        <div className={styles.gameImages}>
+          <div className={styles.playerSprite}>
+            <img
+              alt={playerStats.name}
+              src={playerStats.img}
+              
+            />
+          </div>
+          <div className={styles.opponentSprite}>
+            <img
+              alt={opponentStats.name}
+              src={opponentStats.img}
+              
+            />
+          </div>
+        </div>
+
         <div className={styles.user}>
             <div className={styles.summary}>
             <PlayerSummary 
@@ -32,13 +55,17 @@ export const Battle = () => {
             maxHealth={playerStats.maxHealth}
             />
             </div>
-        </div>
-        <div className={styles.hudChild}>
+            
+            <div className={styles.hud}>
+            <div className={styles.hudChild}>
             <BattleMenu
             onAttack={() => console.log('Attack!')}
             onMagic ={() => console.log('Magic')}
             onHeal ={() => console.log('heal')}/>
+            </div>
+        
         </div>
-    </div>
+        </div>
+    </>
     );
 };
