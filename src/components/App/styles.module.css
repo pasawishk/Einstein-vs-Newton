@@ -7,3 +7,13 @@
     flex-direction: column;
     justify-content: space-between;
 }
+.app-container {
+    width: 70%; /* Adjust the size as needed */
+    max-width: 800px; /* Limit maximum width if desired */
+    margin: auto; /* Horizontally center the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center the container */
+    align-items: center;
+    min-height: 100vh; /* Ensure container takes up at least the full viewport height */
+  }

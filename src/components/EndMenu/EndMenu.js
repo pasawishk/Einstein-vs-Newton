@@ -1,6 +1,6 @@
 import styles from './styles.module.css';
 
-const EndMenu = ({ winner, onStartClick }) => {
+export const EndMenu = ({ winner, onStartClick }) => {
   return (
     <div className={styles.main}>
       <h1>{winner.name} has won!</h1>
@@ -10,5 +10,3 @@ const EndMenu = ({ winner, onStartClick }) => {
     </div>
   );
 };
-
-export default EndMenu;

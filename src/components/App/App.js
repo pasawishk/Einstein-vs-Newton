@@ -1,9 +1,8 @@
-import {useState} from 'react';
+import { useEffect, useState } from 'react';
 import styles from "./styles.module.css";
-import { StartMenu } from '../StartMenu/StartMenu.js';
 import { Battle } from '../Battle/Battle.js';
-import EndMenu from 'components/EndMenu/EndMenu';
-import { useEffect } from 'react';
+import { EndMenu } from '../EndMenu/EndMenu';
+import { StartMenu } from 'components/StartMenu';
 
 
 

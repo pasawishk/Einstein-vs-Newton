@@ -1,7 +1,7 @@
 import { wait } from 'shared';
 import { useEffect, useState } from 'react';
 
-const useTypedMessage = message => {
+export const useTypedMessage = message => {
   const [typedMessage, setTypedMessage] = useState('');
 
   useEffect(() => {
@@ -23,5 +23,3 @@ const useTypedMessage = message => {
 
   return typedMessage;
 };
-
-export default useTypedMessage;
